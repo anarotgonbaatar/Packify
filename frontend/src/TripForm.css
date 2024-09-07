@@ -1,0 +1,29 @@
+#btn-cont {
+    display: inherit;
+    justify-content: space-between;
+}
+
+#submit-btn {
+    background-color: var(--secondary-color);
+}
+
+#reset-btn {
+    background-color: var(--accent-color);
+}
+
+.att-cont {
+    background-color: rgb(240, 240, 240);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.att-label {
+    font-size: large;
+    font-weight: bold;
+}
+
+.checkbox-cont {
+    display: grid;
+    gap: 0.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
