@@ -17,6 +17,10 @@
     padding: 0.5rem;
 }
 
+.att-cont input {
+    margin-left: auto;
+}
+
 .att-label {
     font-size: large;
     font-weight: bold;
@@ -24,6 +28,20 @@
 
 .checkbox-cont {
     display: grid;
-    gap: 0.25rem;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.5rem;
+}
+
+.checkbox-group strong {
+    display: block;
+}
+
+.checkbox-group label {
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox-group label input {
+    margin-right: 0.25rem;
+    cursor: pointer;
 }

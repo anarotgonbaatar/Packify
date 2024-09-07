@@ -4,11 +4,11 @@ import './TripForm.css'
 
 const TripForm = ({ onSubmit }) => {
     const [formData, setFormData] = useState({
-        tripName: '',
-        tripType: [],
         days: 1,
         activities: [],
         weather: [],
+        tempHigh: 0,
+        tempLow: 0,
         specialRequirements: [],
     });
   
@@ -40,64 +40,44 @@ const TripForm = ({ onSubmit }) => {
 
     return (
         <form onSubmit={handleSubmit} className='cont'>
-            <div className='att-cont'>
-                <label className='att-label'>Trip Name:</label>
-                <input type="text" name="tripName" value={formData.tripName} onChange={handleChange} />
-            </div>
+
+            {/* Activities section */}
             <div className='att-cont cont'>
-                <label className='att-label'>Type of Trip:</label>
-                <div className='checkbox-cont'>
-                    <label>
-                        <input type="checkbox" name="tripType" value="vacation" onChange={handleCheckboxChange} />
-                        Vacation
+            <label className='att-label'>Activities:</label>
+            <div className="checkbox-cont">
+                {[
+                { group: "Outdoors", activities: ["Sightseeing", "Photography", "Road Trip", "Hiking", "Camping", "Backpacking"] },
+                { group: "Water Activities", activities: ["Swimming", "Snorkeling", "Scuba Diving", "Fishing", "Kayaking", "Surfing"] },
+                { group: "Mountain Activities", activities: ["Rock Climbing", "Skiing", "Snowboarding", "Mountain Biking", "Horseback Riding"] },
+                { group: "Motorsports", activities: ["Motorcycling", "Off-roading", "ATV Riding"] },
+                { group: "Athletic & Fitness", activities: ["Running", "Cycling", "Trail Running", "Yoga"] },
+                { group: "Hunting & Wildlife", activities: ["Hunting", "Bird Watching", "Wildlife Tracking"] }
+                ].map(category => (
+                <div key={category.group} className="checkbox-group">
+                    <strong>{category.group}:</strong>
+                    {category.activities.map(activity => (
+                    <label key={activity}>
+                        <input
+                        type="checkbox"
+                        name="activities"
+                        value={activity.toLowerCase().replace(/ /g, '-')}
+                        onChange={handleCheckboxChange}
+                        />
+                        {activity}
                     </label>
-                    <label>
-                        <input type="checkbox" name="tripType" value="business" onChange={handleCheckboxChange} />
-                        Business
-                    </label>
-                    <label>
-                        <input type="checkbox" name="tripType" value="business" onChange={handleCheckboxChange} />
-                        Road Trip
-                    </label>
+                    ))}
                 </div>
+                ))}
             </div>
+            </div>
+
+            {/* Number of days section */}
             <div className='att-cont'>
                 <label className='att-label'>Number of Days:</label>
                 <input type="number" name="days" value={formData.days} onChange={handleChange} min="1" />
             </div>
-            <div className='att-cont cont'>
-                <label className='att-label'>Activities:</label>
-                <div className="checkbox-cont">
-                    {[
-                        "Sightseeing",
-                        "Photography",
-                        "Hiking",
-                        "Running",
-                        "Rock Climbing",
-                        "Cycling",
-                        "Motorcycling",
-                        "Off-roading",
-                        "Camping",
-                        "Backpacking",
-                        "Swimming",
-                        "Snorkeling",
-                        "Scuba Diving",
-                        "Fishing",
-                        "Kayaking",
-                        "Skiing",
-                        "Surfing",
-                        "Snowboarding",
-                        "Mountain Biking",
-                        "Horseback Riding",
-                        "Hunting"
-                    ].map(activity => (
-                        <label key={activity}>
-                            <input type="checkbox" name="activities" value={activity.toLowerCase().replace(/ /g, '-')} onChange={handleCheckboxChange} />
-                            {activity}
-                        </label>
-                    ))}
-                </div>
-            </div>
+
+            {/* Weather section */}
             <div className='att-cont cont'>
                 <label className='att-label'>Weather:</label>
                 <div className='checkbox-cont'>
@@ -117,8 +97,14 @@ const TripForm = ({ onSubmit }) => {
                         <input type="checkbox" name="weather" value="snowy" onChange={handleCheckboxChange} />
                         Windy
                     </label>
+                    <label className='att-label'>High Temperature:</label>
+                    <input type="number" name="temp-high" value={formData.tempHigh} onChange={handleChange} min="0" />
+                    <label className='att-label'>Low Temperature:</label>
+                    <input type="number" name="temp-low" value={formData.tempLow} onChange={handleChange} min="0" />
                 </div>
             </div>
+
+            {/* Special requirements section */}
             <div className='att-cont cont'>
                 <label className='att-label'>Special Requirements:</label>
                 <div className='checkbox-cont'>
@@ -134,13 +120,14 @@ const TripForm = ({ onSubmit }) => {
                 </div>
             </div>
 
+            {/* Buttons section */}
             <div id='btn-cont'>
                 <button id='reset-btn' type="reset" onClick={() => setFormData({
-                        tripName: '',
-                        tripType: [],
                         days: 1,
                         activities: [],
                         weather: [],
+                        tempHigh: 0,
+                        tempLow: 0,
                         specialRequirements: [],
                     })}>
                     Reset
