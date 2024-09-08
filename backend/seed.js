@@ -18,7 +18,7 @@ const Item = mongoose.model('Item', itemSchema);
 
 const items = [
     { name: 'Tent', category: 'equipment', attributes: ['camping', 'backpacking'] },
-    { name: 'Sleeping Bag', category: 'equipment', attributes: ['camping', 'backpacking'] },
+    { name: 'Sleeping Bag', category: 'equipment', attributes: ['camping', 'backpacking', 'cold-weather'] },
     { name: 'Sunscreen', category: 'toiletry', attributes: ['sunny', 'sightseeing'] },
     { name: 'Hiking Boots', category: 'clothing', attributes: ['hiking'] },
     { name: 'Camera', category: 'equipment', attributes: ['photography', 'sightseeing'] },

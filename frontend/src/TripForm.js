@@ -7,14 +7,16 @@ const TripForm = ({ onSubmit }) => {
         days: 1,
         activities: [],
         weather: [],
-        tempHigh: 0,
-        tempLow: 0,
-        specialRequirements: [],
+        tempHigh: 75,
+        tempLow: 32
     });
   
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value,
+        }));
     };
   
     const handleCheckboxChange = (e) => {
@@ -43,7 +45,7 @@ const TripForm = ({ onSubmit }) => {
 
             {/* Activities section */}
             <div className='att-cont cont'>
-            <label className='att-label'>Activities:</label>
+            <h2 className='section-label'>Activities:</h2>
             <div className="checkbox-cont">
                 {[
                 { group: "Outdoors", activities: ["Sightseeing", "Photography", "Road Trip", "Hiking", "Camping", "Backpacking"] },
@@ -73,13 +75,13 @@ const TripForm = ({ onSubmit }) => {
 
             {/* Number of days section */}
             <div className='att-cont'>
-                <label className='att-label'>Number of Days:</label>
-                <input type="number" name="days" value={formData.days} onChange={handleChange} min="1" />
+                <h2 className='section-label'>Number of Days:</h2>
+                <input className='input-num' type="number" name="days" value={formData.days} onChange={handleChange} min="1" />
             </div>
 
             {/* Weather section */}
             <div className='att-cont cont'>
-                <label className='att-label'>Weather:</label>
+                <h2 className='section-label'>Weather:</h2>
                 <div className='checkbox-cont'>
                     <label>
                         <input type="checkbox" name="weather" value="sunny" onChange={handleCheckboxChange} />
@@ -94,31 +96,22 @@ const TripForm = ({ onSubmit }) => {
                         Snowy
                     </label>
                     <label>
-                        <input type="checkbox" name="weather" value="snowy" onChange={handleCheckboxChange} />
+                        <input type="checkbox" name="weather" value="windy" onChange={handleCheckboxChange} />
                         Windy
                     </label>
-                    <label className='att-label'>High Temperature:</label>
-                    <input type="number" name="temp-high" value={formData.tempHigh} onChange={handleChange} min="0" />
-                    <label className='att-label'>Low Temperature:</label>
-                    <input type="number" name="temp-low" value={formData.tempLow} onChange={handleChange} min="0" />
+
+                    {/* Temperature subsection */}
+                    <label className='section-label'>Temperature in °F:</label>
+                    <div className=''>
+                        <span>High: </span>
+                        <input className='input-num' type="number" name="tempHigh" value={formData.tempHigh} onChange={handleChange} min="0" />
+                        <span>Low: </span>
+                        <input className='input-num' type="number" name="tempLow" value={formData.tempLow} onChange={handleChange} min="0" />
+                    </div>
                 </div>
             </div>
 
-            {/* Special requirements section */}
-            <div className='att-cont cont'>
-                <label className='att-label'>Special Requirements:</label>
-                <div className='checkbox-cont'>
-                    <label>
-                        <input type="checkbox" name="specialRequirements" value="medications" onChange={handleCheckboxChange} />
-                        Medications
-                    </label>
-                    <label>
-                        <input type="checkbox" name="specialRequirements" value="specificEquipment" onChange={handleCheckboxChange} />
-                        Specific Equipment
-                    </label>
-                    {/* Add more special requirements as needed */}
-                </div>
-            </div>
+            {/* Special requirements section removed for simplicity for now. Might add it back later */}
 
             {/* Buttons section */}
             <div id='btn-cont'>
@@ -126,9 +119,8 @@ const TripForm = ({ onSubmit }) => {
                         days: 1,
                         activities: [],
                         weather: [],
-                        tempHigh: 0,
-                        tempLow: 0,
-                        specialRequirements: [],
+                        tempHigh: 75,
+                        tempLow: 32
                     })}>
                     Reset
                 </button>
