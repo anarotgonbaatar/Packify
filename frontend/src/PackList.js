@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const PackList = ({ packingList }) => {
+    // Checkbox logic
+    const [ checkedItems, setCheckedItems ] = useState(() => {
+        // Init all items unchecked
+        return packingList.reduce(( acc, item ) => {
+            acc[ item.name ] = false;
+            return acc;
+        }, {});
+    })
+
+    // Toggle the checked state of an item
+    const handleCheckboxChange = ( itemName ) => {
+        setCheckedItems(( prev ) => ({
+            ...prev,
+            [itemName]: !prev[itemName]
+        }));
+    }
+
     // Only unique items are displayed
     const uniqueItems = Array.from( new Set( packingList.map( item => item.name ))); 
 
@@ -11,7 +28,14 @@ const PackList = ({ packingList }) => {
             <ul>
                 {uniqueItems.map((itemName, index) => (
                 <li key={index}>
-                    {packingList.find( item => item.name === itemName).quantity} x {itemName}
+                    <label>
+                        <input
+                            type='checkbox'
+                            checked={checkedItems[ itemName ]}
+                            onChange={() => handleCheckboxChange( itemName )}
+                        />
+                        {packingList.find( item => item.name === itemName).quantity} x {itemName}
+                    </label>
                 </li>
                 ))}
             </ul>

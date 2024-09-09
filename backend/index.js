@@ -77,11 +77,11 @@ app.post('/generate-list', async (req, res) => {
             return acc;
         }, []);
 
-        // Add logic for items based on days
-        const packingList = items.map(item => ({
+        // Quantified logic
+        const packingList = filteredItems.map( item => ({
             ...item.toObject(),
-            quantity: item.category === 'clothing' ? days : 1
-        }));
+            quantity: item.quantified ? days: 1 // If quantified: true, multiply by 'days'
+        }))
         
         res.json({ packingList });
     } catch (err) {

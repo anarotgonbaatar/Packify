@@ -45,32 +45,32 @@ const TripForm = ({ onSubmit }) => {
 
             {/* Activities section */}
             <div className='att-cont cont'>
-            <h2 className='section-label'>Activities:</h2>
-            <div className="checkbox-cont">
-                {[
-                { group: "Outdoors", activities: ["Sightseeing", "Photography", "Road Trip", "Hiking", "Camping", "Backpacking"] },
-                { group: "Water Activities", activities: ["Swimming", "Snorkeling", "Scuba Diving", "Fishing", "Kayaking", "Surfing"] },
-                { group: "Mountain Activities", activities: ["Rock Climbing", "Skiing", "Snowboarding", "Mountain Biking", "Horseback Riding"] },
-                { group: "Motorsports", activities: ["Motorcycling", "Off-roading", "ATV Riding"] },
-                { group: "Athletic & Fitness", activities: ["Running", "Cycling", "Trail Running", "Yoga"] },
-                { group: "Hunting & Wildlife", activities: ["Hunting", "Bird Watching", "Wildlife Tracking"] }
-                ].map(category => (
-                <div key={category.group} className="checkbox-group">
-                    <strong>{category.group}:</strong>
-                    {category.activities.map(activity => (
-                    <label key={activity}>
-                        <input
-                        type="checkbox"
-                        name="activities"
-                        value={activity.toLowerCase().replace(/ /g, '-')}
-                        onChange={handleCheckboxChange}
-                        />
-                        {activity}
-                    </label>
+                <h2 className='section-label'>Activities:</h2>
+                <div className="checkbox-cont">
+                    {[
+                        { group: "Outdoors", activities: ["Photography", "Road Trip", "Hiking", "Camping", "Backpacking"] },
+                        { group: "Water Activities", activities: ["Swimming", "Snorkeling", "Scuba Diving", "Fishing", "Kayaking", "Surfing"] },
+                        { group: "Mountain Activities", activities: ["Rock Climbing", "Skiing", "Snowboarding", "Mountain Biking", "Horseback Riding"] },
+                        { group: "Motorsports", activities: ["Motorcycling", "Off-roading", "ATV Riding"] },
+                        { group: "Athletic & Fitness", activities: ["Running", "Cycling", "Trail Running", "Yoga"] },
+                        { group: "Hunting & Wildlife", activities: ["Hunting", "Bird Watching", "Wildlife Tracking"] },
+                    ].map(category => (
+                    <div key={category.group} className="checkbox-group">
+                        <strong>{category.group}:</strong>
+                        {category.activities.map(activity => (
+                        <label key={activity}>
+                            <input
+                                type="checkbox"
+                                name="activities"
+                                value={activity.toLowerCase().replace(/ /g, '-')}
+                                onChange={handleCheckboxChange}
+                            />
+                            {activity}
+                        </label>
+                        ))}
+                    </div>
                     ))}
                 </div>
-                ))}
-            </div>
             </div>
 
             {/* Number of days section */}
