@@ -63,7 +63,7 @@ app.post('/generate-list', async (req, res) => {
         });
 
         // Logic for filtering items based on temperature if needed
-        const filteredItems = items.filter(item => {
+        const filteredItems = items.filter( item => {
             if (item.attributes.includes('cold-weather') && tempLow < 40) return true;
             if (item.attributes.includes('hot-weather') && tempHigh > 80) return true;
             // Include more temperature-related filtering if needed
@@ -78,10 +78,13 @@ app.post('/generate-list', async (req, res) => {
         }, []);
 
         // Quantified logic
-        const packingList = filteredItems.map( item => ({
-            ...item.toObject(),
-            quantity: item.quantified ? days: 1 // If quantified: true, multiply by 'days'
-        }))
+        const packingList = filteredItems.map( item => {
+            const quantity = item.quantified ? days : 1;
+            return {
+                ...item._doc,
+                quantity
+            };
+        });
         
         res.json({ packingList });
     } catch (err) {

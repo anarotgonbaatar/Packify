@@ -51,7 +51,7 @@ const items = [
     { name: 'Map and Compass', quantified: false, weather: [], attributes: ['hiking', 'backpacking'] },
 
     // Hygiene
-    { name: 'Toothbrush', quantified: true, weather: [], attributes: ['camping', 'backpacking'] },
+    { name: 'Toothbrush', quantified: false, weather: [], attributes: ['camping', 'backpacking'] },
     { name: 'Biodegradable Soap', quantified: false, weather: [], attributes: ['camping', 'backpacking'] },
     { name: 'Quick-dry Towel', quantified: false, weather: [], attributes: ['camping', 'backpacking'] },
 

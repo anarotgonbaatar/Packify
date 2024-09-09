@@ -34,7 +34,7 @@ const TripForm = ({ onSubmit }) => {
         e.preventDefault();
         try {
             const response = await axios.post('http://localhost:5000/generate-list', formData);
-            onSubmit(response.data.packingList);
+            onSubmit(response.data.packingList, formData.days);
         } catch (error) {
             console.error('Error generating packing list:', error);
         }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const PackList = ({ packingList }) => {
+const PackList = ({ packingList, days }) => {
     // Checkbox logic
     const [ checkedItems, setCheckedItems ] = useState(() => {
         // Init all items unchecked
@@ -26,18 +26,22 @@ const PackList = ({ packingList }) => {
             <h2>Items to Pack</h2>
             {uniqueItems.length > 0 ? (
             <ul>
-                {uniqueItems.map((itemName, index) => (
-                <li key={index}>
-                    <label>
-                        <input
-                            type='checkbox'
-                            checked={checkedItems[ itemName ]}
-                            onChange={() => handleCheckboxChange( itemName )}
-                        />
-                        {packingList.find( item => item.name === itemName).quantity} x {itemName}
-                    </label>
-                </li>
-                ))}
+                {uniqueItems.map(( itemName, index ) => {
+                    const item = packingList.find(item => item.name === itemName);
+                    const quantity = item.quantified ? item.quantity * days : item.quantity;  // Only multiply if quantified is true
+                    return (
+                        <li key={index}>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    checked={checkedItems[itemName]}
+                                    onChange={() => handleCheckboxChange(itemName)}
+                                />
+                                {quantity} x {itemName}
+                            </label>
+                        </li>
+                    );
+                })}
             </ul>
             ) : (
             <span>Select attributes and press Submit to generate a list.</span>
