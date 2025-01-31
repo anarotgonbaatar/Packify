@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Packify/static/css/main.0934c2d2.css",
+    "main.js": "/Packify/static/js/main.a2d069b0.js",
+    "index.html": "/Packify/index.html",
+    "main.0934c2d2.css.map": "/Packify/static/css/main.0934c2d2.css.map",
+    "main.a2d069b0.js.map": "/Packify/static/js/main.a2d069b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0934c2d2.css",
+    "static/js/main.a2d069b0.js"
+  ]
+}
