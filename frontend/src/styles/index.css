@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+}
+
+:root {
+    --bg: #4b3f3a;
+    --text: #e6cba8;
+    --accent: #7b4b3a;
+	--shadow: rgba( 0, 0, 0, 0.2 );
+	--glass: rgba( 255, 255, 255, 0.1 );
+    --trans: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: var(--bg);
+    color: var(--text);
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Contains both sections Details and Pack List. */
+#app {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+#title {
+    font-size: 2rem;
+	width: 100%;
+	padding-bottom: 1rem;
+	
+	text-align: center;
+
+	border-bottom: 1px solid var(--glass);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+	max-width: 36rem;
+    gap: 1rem;
+	padding: 1rem;
+
+	border: 1px solid var(--glass);
+	border-radius: 2rem;
+	box-shadow: 0 0 0.5rem var(--shadow );
+}
+
+.header {
+    font-size: 1.5rem;
+}
+
+#footer {
+	width: 100%;
+	text-align: center;
+
+	padding-top: 1rem;
+	border-top: 1px solid var(--glass);
+}
+
+@media only screen and (max-width: 900px) {
+	/* Make the app vertical */
+	#app {
+		flex-direction: column;
+		align-items: center;
+	}
+}

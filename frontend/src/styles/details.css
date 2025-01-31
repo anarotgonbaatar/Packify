@@ -1,0 +1,141 @@
+#details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1rem;
+}
+
+#first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+	width: 100%;
+}
+
+.question {
+	font-size: 1.1rem;
+}
+
+.question-box {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.5rem;
+}
+
+.options-box {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: auto;
+	margin-bottom: auto;
+
+    gap: 1rem;
+}
+
+.choice-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 4.5rem;
+	height: 4.5rem;
+	padding: 0.5rem;
+    
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+
+    cursor: pointer;
+    transition: var(--trans);
+}
+.choice-box:hover {
+    background-color: var(--text);
+    color: var(--bg);
+    box-shadow: 0 0 0.5rem var(--text);
+}
+.choice-box:active {
+    transform: scale(0.9);
+}
+.choice-box.selected {
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+.activities-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.activity-group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+.activities-box {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+}
+.activity-bubble {
+    border: 1px solid var(--text);
+    border-radius: 1rem;
+
+    padding: 0.25rem 0.75rem;
+
+    transition: var(--trans);
+    cursor: pointer;
+}
+.activity-bubble:hover {
+    background-color: var(--text);
+    color: var(--bg);
+
+    box-shadow: 0 0 0.5rem var(--text);
+}
+.activity-bubble:active{
+    background-color: var(--bg);
+    color: var(--text);
+    transform: scale(0.9);
+}
+.activity-bubble.selected {
+    background-color: var(--text);
+    color: var(--bg);
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+    justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
+
+    background-color: var(--text);
+    color: var(--bg);
+
+    border: none;
+    border-radius: 1rem;
+	box-shadow: 0 0 0.5rem var(--shadow);
+
+    padding: 1rem;
+    min-width: 4rem;
+
+    font-weight: bold;
+    transition: var(--trans);
+}
+.btn:hover {
+    box-shadow: 0 0 0.5rem var(--text);
+}
+.btn:active {
+    background-color: var(--bg);
+    color: var(--text);
+    transform: scale(0.9);
+}

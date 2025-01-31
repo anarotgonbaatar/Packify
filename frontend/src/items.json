@@ -1,0 +1,298 @@
+{
+	"Clothing": [
+		{ "name": "T-Shirt", "weather": ["Sunny"], "activities": ["Hiking", "Casual Walking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Tank Top", "weather": ["Sunny"], "activities": ["Swimming", "Snorkeling", "Kayaking", "Beach"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Polo Shirt", "weather": ["Sunny"], "activities": ["Casual Walking", "Sightseeing"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Long Sleeve Shirt", "weather": ["Windy", "Rainy"], "activities": ["Hiking", "Camping", "Casual Walking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Button-Up Shirt", "weather": ["Sunny"], "activities": ["Casual Walking", "Dinner", "City Exploration"], "sex": ["Male", "Female"], "pets": ["No"] },
+		
+		{ "name": "Pants", "weather": ["Windy", "Rainy", "Snowy"], "activities": ["Hiking", "Camping", "Casual Walking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Cargo Pants", "weather": ["Windy", "Rainy"], "activities": ["Hiking", "Camping", "Photography"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Jeans", "weather": ["Windy", "Rainy"], "activities": ["Casual Walking", "City Exploration"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Joggers", "weather": ["Windy", "Cool"], "activities": ["Running", "Hiking", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Leggings", "weather": ["Windy", "Cool"], "activities": ["Running", "Yoga", "Hiking"], "sex": ["Female"], "pets": ["Yes", "No"] },
+		
+		{ "name": "Shorts", "weather": ["Sunny"], "activities": ["Swimming", "Hiking", "Casual Walking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Athletic Shorts", "weather": ["Sunny"], "activities": ["Running", "Yoga", "Trail Running"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Board Shorts", "weather": ["Sunny"], "activities": ["Swimming", "Surfing", "Snorkeling"], "sex": ["Male"], "pets": ["No"] },
+
+		{ "name": "Dresses", "weather": ["Sunny"], "activities": ["Casual Walking", "Dinner", "Beach"], "sex": ["Female"], "pets": ["No"] },
+		{ "name": "Skirt", "weather": ["Sunny"], "activities": ["Casual Walking", "Dinner"], "sex": ["Female"], "pets": ["No"] },
+
+		{ "name": "Jacket", "weather": ["Windy", "Rainy", "Snowy"], "activities": ["Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Raincoat", "weather": ["Rainy"], "activities": ["Hiking", "Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Snow Jacket", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Thermal Wear", "weather": ["Snowy"], "activities": ["Skiing", "Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Fleece Jacket", "weather": ["Windy", "Cold"], "activities": ["Hiking", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Swimwear", "weather": ["Sunny"], "activities": ["Swimming", "Snorkeling", "Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Rash Guard", "weather": ["Sunny"], "activities": ["Surfing", "Kayaking", "Swimming"], "sex": ["Male", "Female"], "pets": ["No"] },
+
+		{ "name": "Hats", "weather": ["Sunny", "Windy"], "activities": ["Hiking", "Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Baseball Cap", "weather": ["Sunny"], "activities": ["Casual Walking", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Beanie", "weather": ["Windy", "Snowy"], "activities": ["Skiing", "Snowboarding", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Gloves", "weather": ["Snowy", "Windy"], "activities": ["Skiing", "Snowboarding", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Touchscreen Gloves", "weather": ["Snowy", "Windy"], "activities": ["Photography", "Casual Walking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Scarves", "weather": ["Snowy", "Windy"], "activities": ["Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Socks", "weather": ["Windy", "Rainy", "Snowy"], "activities": ["Hiking", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Wool Socks", "weather": ["Snowy", "Cold"], "activities": ["Skiing", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Underwear", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Shoes (Hiking Boots)", "weather": ["Windy", "Rainy", "Snowy"], "activities": ["Hiking", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Shoes (Water Shoes)", "weather": ["Sunny"], "activities": ["Swimming", "Snorkeling", "Kayaking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Shoes (Sandals)", "weather": ["Sunny"], "activities": ["Beach", "Casual Walking", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] }
+	],
+
+	"Toiletries": [
+		{ "name": "Toothbrush", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Toothpaste", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Mouthwash", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Floss", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Shampoo", "weather": [], "activities": ["Swimming", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Conditioner", "weather": [], "activities": ["Swimming", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Dry Shampoo", "weather": [], "activities": ["Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Body Wash", "weather": [], "activities": ["Swimming", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Bar Soap", "weather": [], "activities": ["Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Face Wash", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Deodorant", "weather": [], "activities": ["Hiking", "Camping", "Fitness"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Sunscreen", "weather": ["Sunny"], "activities": ["Swimming", "Hiking", "Camping"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Lip Balm", "weather": ["Sunny", "Windy", "Snowy"], "activities": ["Hiking", "Camping", "Skiing"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		
+		{ "name": "Moisturizer", "weather": ["Windy", "Snowy"], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Face Moisturizer", "weather": ["Windy", "Snowy"], "activities": ["Skiing", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Hand Cream", "weather": ["Windy", "Snowy"], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Bug Spray / Insect Repellent", "weather": ["Sunny", "Rainy"], "activities": ["Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Anti-Itch Cream", "weather": [], "activities": ["Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Aloe Vera Gel", "weather": ["Sunny"], "activities": ["Swimming", "Beach"], "sex": ["Male", "Female"], "pets": ["No"] },
+
+		{ "name": "Razor", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Shaving Cream", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Aftershave", "weather": [], "activities": [], "sex": ["Male"], "pets": ["Yes", "No"] },
+
+		{ "name": "Feminine Hygiene Products", "weather": [], "activities": [], "sex": ["Female"], "pets": ["Yes", "No"] },
+		{ "name": "Menstrual Cup", "weather": [], "activities": ["Camping", "Traveling"], "sex": ["Female"], "pets": ["Yes", "No"] },
+		
+		{ "name": "Hand Sanitizer", "weather": [], "activities": ["Camping", "Hiking", "Traveling"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Wet Wipes", "weather": [], "activities": ["Camping", "Traveling", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		
+		{ "name": "Towels (Small)", "weather": [], "activities": ["Camping", "Swimming", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Towels (Large)", "weather": [], "activities": ["Camping", "Swimming"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		
+		{ "name": "Cotton Swabs", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Nail Clippers", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Tweezers", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		
+		{ "name": "First Aid Kit", "weather": [], "activities": ["Camping", "Hiking", "Traveling"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Pain Relievers", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Motion Sickness Pills", "weather": [], "activities": ["Road Trip", "Boat Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] }
+	],
+
+	"Outdoor Equipment": [
+		{ "name": "Tent", "weather": ["Rainy", "Windy", "Snowy"], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Sleeping Bag", "weather": ["Snowy", "Cold"], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Sleeping Pad", "weather": ["Cold"], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Camping Pillow", "weather": [], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["No"] },
+		
+		{ "name": "Camping Stove", "weather": [], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Portable Grill", "weather": [], "activities": ["Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Fuel Canister", "weather": [], "activities": ["Camping", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Cooking Utensils", "weather": [], "activities": ["Camping", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Collapsible Sink", "weather": [], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["No"] },
+
+		{ "name": "Lantern", "weather": [], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Flashlight", "weather": [], "activities": ["Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Headlamp", "weather": [], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Batteries", "weather": [], "activities": [], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Multi-tool", "weather": [], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Knife", "weather": [], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Paracord", "weather": [], "activities": ["Camping", "Hiking", "Survival"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "First Aid Kit", "weather": [], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Emergency Blanket", "weather": ["Cold", "Snowy"], "activities": ["Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Whistle", "weather": [], "activities": ["Hiking", "Survival"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Compass", "weather": [], "activities": ["Hiking", "Camping", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "GPS Device", "weather": [], "activities": ["Hiking", "Backpacking", "Survival"], "sex": ["Male", "Female"], "pets": ["No"] },
+
+		{ "name": "Fire Starter", "weather": [], "activities": ["Camping", "Survival"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Water Purification Tablets", "weather": [], "activities": ["Camping", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Water Filter", "weather": [], "activities": ["Camping", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		
+		{ "name": "Bear Spray", "weather": [], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Bug Spray / Insect Repellent", "weather": ["Sunny", "Rainy"], "activities": ["Camping", "Hiking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Backpack", "weather": [], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Daypack", "weather": [], "activities": ["Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Trekking Poles", "weather": ["Windy", "Snowy"], "activities": ["Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Hiking Gaiters", "weather": ["Rainy", "Snowy"], "activities": ["Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+
+		{ "name": "Solar Charger", "weather": ["Sunny"], "activities": ["Camping", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Portable Power Bank", "weather": [], "activities": ["Camping", "Backpacking", "Traveling"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Folding Chair", "weather": [], "activities": ["Camping", "Beach"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Camping Table", "weather": [], "activities": ["Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+
+		{ "name": "Cooler Box", "weather": [], "activities": ["Camping", "Road Trip"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Insulated Water Bottle", "weather": ["Sunny", "Cold"], "activities": ["Camping", "Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Hydration Bladder", "weather": ["Sunny", "Cold"], "activities": ["Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] }
+	],
+
+	"Water Activities": [
+		{ "name": "Swimsuit", "weather": ["Sunny"], "activities": ["Swimming", "Snorkeling", "Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Rash Guard", "weather": ["Sunny"], "activities": ["Surfing", "Kayaking", "Swimming"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Swim Shorts", "weather": ["Sunny"], "activities": ["Swimming", "Surfing", "Kayaking"], "sex": ["Male"], "pets": ["No"] },
+		{ "name": "Wetsuit", "weather": ["Cold", "Windy"], "activities": ["Scuba Diving", "Snorkeling", "Surfing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Drysuit", "weather": ["Cold", "Snowy"], "activities": ["Scuba Diving", "Snorkeling"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Snorkel Set", "weather": ["Sunny"], "activities": ["Snorkeling", "Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Diving Mask", "weather": ["Sunny"], "activities": ["Scuba Diving", "Snorkeling"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Swim Goggles", "weather": ["Sunny"], "activities": ["Swimming"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Fins", "weather": ["Sunny"], "activities": ["Snorkeling", "Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Dive Boots", "weather": ["Cold"], "activities": ["Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Life Jacket", "weather": ["Windy", "Rainy"], "activities": ["Kayaking", "Boating", "Fishing"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Inflatable Life Vest", "weather": ["Windy", "Rainy"], "activities": ["Swimming", "Boating"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Waterproof Bag", "weather": ["Sunny", "Rainy"], "activities": ["Kayaking", "Boating", "Swimming"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Waterproof Phone Case", "weather": ["Sunny", "Rainy"], "activities": ["Kayaking", "Boating", "Swimming"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Dry Sack", "weather": ["Sunny", "Rainy"], "activities": ["Kayaking", "Boating", "Camping"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+	
+		{ "name": "Towel (Quick-Dry)", "weather": ["Sunny"], "activities": ["Swimming", "Snorkeling", "Kayaking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Beach Towel", "weather": ["Sunny"], "activities": ["Beach", "Swimming"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Water Shoes", "weather": ["Sunny"], "activities": ["Swimming", "Kayaking", "Boating"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Flip-Flops", "weather": ["Sunny"], "activities": ["Beach", "Casual Walking"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Paddleboard (SUP)", "weather": ["Sunny"], "activities": ["Paddleboarding"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Kayak", "weather": ["Sunny", "Windy"], "activities": ["Kayaking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Canoe", "weather": ["Sunny", "Windy"], "activities": ["Canoeing"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Paddles", "weather": ["Sunny", "Windy"], "activities": ["Kayaking", "Canoeing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Kayak Seat Cushion", "weather": ["Sunny", "Windy"], "activities": ["Kayaking"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Fishing Rod", "weather": ["Sunny", "Windy"], "activities": ["Fishing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Bait & Lures", "weather": ["Sunny", "Windy"], "activities": ["Fishing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Tackle Box", "weather": ["Sunny", "Windy"], "activities": ["Fishing"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Surfboard", "weather": ["Sunny"], "activities": ["Surfing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Surf Wax", "weather": ["Sunny"], "activities": ["Surfing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Leash (Surfboard)", "weather": ["Sunny"], "activities": ["Surfing"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Diving Tank", "weather": ["Sunny", "Cold"], "activities": ["Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Dive Computer", "weather": ["Sunny", "Cold"], "activities": ["Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Underwater Camera", "weather": ["Sunny"], "activities": ["Snorkeling", "Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Waterproof Flashlight", "weather": ["Cold"], "activities": ["Scuba Diving"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Sunscreen", "weather": ["Sunny"], "activities": ["Swimming", "Beach", "Snorkeling"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Aloe Vera Gel", "weather": ["Sunny"], "activities": ["Beach", "Swimming"], "sex": ["Male", "Female"], "pets": ["No"] }
+	],
+
+	"Mountain Activities": [
+		{ "name": "Hiking Boots", "weather": ["Windy", "Rainy", "Snowy"], "activities": ["Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["Yes", "No"] },
+		{ "name": "Trail Running Shoes", "weather": ["Sunny", "Windy"], "activities": ["Trail Running", "Hiking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Snow Boots", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding", "Winter Hiking"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Trekking Poles", "weather": ["Windy", "Snowy"], "activities": ["Hiking", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Crampons", "weather": ["Snowy"], "activities": ["Mountaineering", "Winter Hiking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ice Axe", "weather": ["Snowy"], "activities": ["Mountaineering", "Ice Climbing"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Climbing Harness", "weather": ["Windy", "Snowy"], "activities": ["Rock Climbing", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Climbing Helmet", "weather": ["Windy"], "activities": ["Rock Climbing", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Climbing Rope", "weather": ["Windy"], "activities": ["Rock Climbing", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Carabiners", "weather": [], "activities": ["Rock Climbing", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Belay Device", "weather": [], "activities": ["Rock Climbing", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Ski Helmet", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ski Goggles", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ski Jacket", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ski Pants", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ski Gloves", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ski Socks", "weather": ["Snowy"], "activities": ["Skiing", "Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Snowboard", "weather": ["Snowy"], "activities": ["Snowboarding"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Skis", "weather": ["Snowy"], "activities": ["Skiing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Ski Poles", "weather": ["Snowy"], "activities": ["Skiing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Snowshoes", "weather": ["Snowy"], "activities": ["Winter Hiking"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Mountain Bike", "weather": ["Sunny", "Windy"], "activities": ["Mountain Biking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Cycling Helmet", "weather": ["Sunny", "Windy"], "activities": ["Mountain Biking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Bike Gloves", "weather": ["Sunny", "Windy"], "activities": ["Mountain Biking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Cycling Shoes", "weather": ["Sunny", "Windy"], "activities": ["Mountain Biking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Hydration Pack", "weather": ["Sunny", "Windy"], "activities": ["Mountain Biking", "Hiking"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Gaiters", "weather": ["Snowy", "Rainy"], "activities": ["Hiking", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Insulated Jacket", "weather": ["Cold", "Snowy"], "activities": ["Hiking", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Thermal Base Layer", "weather": ["Cold", "Snowy"], "activities": ["Hiking", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "GPS Device", "weather": [], "activities": ["Hiking", "Backpacking", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Compass", "weather": [], "activities": ["Hiking", "Backpacking", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Map", "weather": [], "activities": ["Hiking", "Backpacking", "Mountaineering"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "Emergency Shelter", "weather": ["Cold", "Snowy"], "activities": ["Mountaineering", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Survival Blanket", "weather": ["Cold", "Snowy"], "activities": ["Mountaineering", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+	
+		{ "name": "First Aid Kit", "weather": [], "activities": ["Hiking", "Climbing", "Backpacking"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Sunscreen", "weather": ["Sunny", "Windy"], "activities": ["Hiking", "Climbing"], "sex": ["Male", "Female"], "pets": ["No"] },
+		{ "name": "Lip Balm", "weather": ["Windy", "Snowy"], "activities": ["Hiking", "Climbing"], "sex": ["Male", "Female"], "pets": ["No"] }
+	],
+
+	"Pets": [
+		{ "name": "Pet Food", "weather": [], "activities": [], "sex": [], "pets": ["Yes"] },
+		{ "name": "Collapsible Water Bowl", "weather": [], "activities": ["Camping", "Hiking", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Collapsible Food Bowl", "weather": [], "activities": ["Camping", "Hiking", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Water Bottle for Pets", "weather": [], "activities": ["Hiking", "Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Leash", "weather": [], "activities": ["Camping", "Hiking", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Retractable Leash", "weather": [], "activities": ["Hiking", "Casual Walking"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Harness", "weather": [], "activities": ["Hiking", "Camping", "Casual Walking"], "sex": [], "pets": ["Yes"] },
+		{ "name": "GPS Tracker for Pets", "weather": [], "activities": ["Hiking", "Camping"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Pet First Aid Kit", "weather": [], "activities": ["Camping", "Hiking", "Traveling"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Tick & Flea Repellent", "weather": ["Sunny", "Rainy"], "activities": ["Camping", "Hiking"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Pet Sunscreen", "weather": ["Sunny"], "activities": ["Hiking", "Camping", "Beach"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Paw Balm", "weather": ["Snowy", "Hot"], "activities": ["Hiking", "Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Waste Bags", "weather": [], "activities": ["Casual Walking", "Camping", "Hiking"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Poop Scoop", "weather": [], "activities": ["Camping", "Backyard"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Litter Box (Portable)", "weather": [], "activities": ["Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Litter Scoop", "weather": [], "activities": ["Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Pet Carrier (Soft-Sided)", "weather": [], "activities": ["Traveling", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Pet Crate (Hard-Sided)", "weather": [], "activities": ["Traveling", "Camping"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Car Seat Cover", "weather": [], "activities": ["Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Pet Safety Seatbelt", "weather": [], "activities": ["Road Trip"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Cooling Vest", "weather": ["Sunny"], "activities": ["Hiking", "Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Dog Boots", "weather": ["Snowy", "Hot"], "activities": ["Hiking", "Camping"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Raincoat for Pets", "weather": ["Rainy"], "activities": ["Hiking", "Casual Walking"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Winter Coat for Pets", "weather": ["Snowy"], "activities": ["Hiking", "Camping"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Dog Backpack", "weather": [], "activities": ["Hiking", "Camping"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Pet Tent", "weather": ["Sunny"], "activities": ["Camping", "Backyard"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Travel Bed for Pets", "weather": [], "activities": ["Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Blanket for Pets", "weather": ["Snowy"], "activities": ["Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+
+		{ "name": "Chew Toys", "weather": [], "activities": [], "sex": [], "pets": ["Yes"] },
+		{ "name": "Tug Toys", "weather": [], "activities": [], "sex": [], "pets": ["Yes"] },
+		{ "name": "Ball / Fetch Toys", "weather": [], "activities": [], "sex": [], "pets": ["Yes"] },
+		{ "name": "Cat Wand / Teaser Toy", "weather": [], "activities": [], "sex": [], "pets": ["Yes"] },
+		
+		{ "name": "Calming Treats", "weather": [], "activities": ["Road Trip", "Flying"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Anxiety Jacket (Thunder Shirt)", "weather": ["Windy", "Rainy"], "activities": ["Camping", "Traveling"], "sex": [], "pets": ["Yes"] },
+		
+		{ "name": "Pet Brush", "weather": [], "activities": ["Camping", "Traveling"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Pet Shampoo (Waterless)", "weather": [], "activities": ["Camping", "Road Trip"], "sex": [], "pets": ["Yes"] },
+		{ "name": "Nail Clippers", "weather": [], "activities": [], "sex": [], "pets": ["Yes"] }
+	]
+}  
